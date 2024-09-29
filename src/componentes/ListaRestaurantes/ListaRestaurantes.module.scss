@@ -2,3 +2,58 @@
   margin-top: 1.5rem;
   padding: 2rem;
 }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px; /* Espaçamento entre grupos de formulário */
+}
+
+input {
+  width: 220px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 8px; /* Espaçamento entre o label e o select */
+  color: #333; /* Cor do texto */
+}
+
+select {
+  margin: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Borda padrão */
+  border-radius: 8px; /* Borda arredondada */
+  background-color: #f9f9f9; /* Cor de fundo */
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+select:focus {
+  border-color: #007bff; /* Cor de foco */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Efeito de foco */
+  outline: none; /* Remove o outline padrão */
+}
+
+select option {
+  padding: 8px; /* Melhor espaçamento nas opções */
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff; /* Cor principal do botão */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
+}
+

@@ -8,7 +8,7 @@ const PaginaBaseAdmin = () => {
             <AppBar position="static">
                 <Container maxWidth="xl">
                     <Toolbar>
-                        <Typography variant="h6">
+                        <Typography variant="h6" sx={{ marginRight:2, color: 'yellow'}}>
                             Administração
                         </Typography>
                         <Box>
@@ -30,6 +30,11 @@ const PaginaBaseAdmin = () => {
                             <Link component={RouterLink} to="/admin/pratos/novo">
                                 <Button sx={{ my: 2, color: 'white' }}>
                                     Novo Prato
+                                </Button>
+                            </Link>
+                            <Link component={RouterLink} to="http://localhost:3000/">
+                                <Button sx={{ marginLeft: 60, my: 2,  color: 'white' }}>
+                                    voltar para Home
                                 </Button>
                             </Link>
                         </Box>
